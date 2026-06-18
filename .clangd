@@ -1,0 +1,6 @@
+CompileFlags:
+  CompilationDatabase: build/
+  Add:
+    - -I/opt/ros/jazzy/include/std_msgs
+    - -I/opt/ros/jazzy/include/rclcpp
+    - -I/opt/ros/jazzy/include/builtin_interfaces
