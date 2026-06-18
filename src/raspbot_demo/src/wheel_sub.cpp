@@ -6,8 +6,10 @@ class WheelSub : public rclcpp::Node
 public:
     WheelSub() : Node("wheel_sub")
     {
+        rclcpp::QoS qos(10);
+        qos.best_effort();
         sub_ = this->create_subscription<raspbot_interfaces::msg::WheelSpeed>(
-            "wheel_speed", 10,
+            "wheel_speed", qos,
             std::bind(&WheelSub::on_msg,this,std::placeholders::_1));
         RCLCPP_INFO(this->get_logger(), "wheel_sub 启动，等WheelSpeed");
     }

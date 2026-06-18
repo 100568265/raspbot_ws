@@ -48,7 +48,7 @@ ros2 topic info /wheel_speed --verbose
 
 - [x] **M0** 工作空间 + 工程底盘（colcon / ament / overlay / clangd）
 - [x] **M1** 发布订阅 + 自定义消息（WheelSpeed，含时间戳纪律）
-- [ ] **M2** QoS 与 DDS 深化
+- [x] **M2** QoS 与 DDS 深化
 - [ ] **M3** Service + Action
 - [ ] **M4** C++ HAL 移植 + chassis_driver（I2C 0x2B 底盘驱动）
 - [ ] **M5** 里程计 + TF
