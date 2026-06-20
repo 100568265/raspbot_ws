@@ -1,0 +1,9 @@
+# === Goal === 发起任务时给的目标
+float64 target_angle_deg
+---
+# === Result === 任务结束返回一次
+float64 actual_angle_deg
+bool success
+---
+# === Feedback === 执行中持续推送
+float64 current_angle_deg

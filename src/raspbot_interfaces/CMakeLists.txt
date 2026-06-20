@@ -13,6 +13,8 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/WheelSpeed.msg"
+  "srv/GetStatus.srv"
+  "action/Rotate.action"
   DEPENDENCIES std_msgs
 )
 
